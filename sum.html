@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //anonymous
+
+        var sum = function (array) {
+            var sum = 0;
+            array.forEach(element => {
+                sum += element
+
+            });
+            console.log(sum)
+
+        }
+        sum([1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+        //normal
+
+        function sum(array) {
+            var sum = 0;
+            array.forEach(element => {
+                sum += element
+
+            });
+            console.log(sum)
+
+        }
+        sum([1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+        //arrow
+
+        let summ = (array) => {
+            var sum = 0;
+            array.forEach(element => {
+                sum += element
+
+            });
+            console.log(sum)
+
+        }
+        summ([1, 2, 3, 4, 5, 6, 7]);
+
+        // IIFE
+
+        (function (array) {
+            var sum = 0;
+            array.forEach(element => {
+                sum = sum + element;
+            })
+            console.log(sum)
+        })
+
+            ([1, 2, 3, 4, 5])
+
+
+    </script>
+</body>
+
+</html>

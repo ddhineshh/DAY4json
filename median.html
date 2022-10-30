@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //anonymous
+        let m, n
+        let medd = function (passs) {
+            let arr1 = [1, 2, 4, 3]
+            let arr2 = [66, 10]
+            let arr = [...arr1, ...arr2].sort((m, n) => m - n)
+            return arr
+        }
+        medd()
+        let a = medd()
+        console.log(a)
+        let med = function (pass) {
+            if (a.length % 2 == 0) {
+                let medi = (a[(a.length / 2) - 1] + a[a.length / 2]) / 2
+                console.log(medi)
+            }
+            else {
+                let d = parseInt((a.length) / 2)
+                console.log(a[d])
+            }
+        }
+        med();
+
+        //IIFE
+
+        (function (a) {
+            if (a.length % 2 == 0) {
+                let medi = (a[(a.length / 2) - 1] + a[a.length / 2]) / 2
+                console.log(medi)
+            }
+            else {
+                let d = parseInt((a.length) / 2)
+                console.log(a[d])
+            }
+
+        })(a)
+    </script>
+</body>
+
+</html>
